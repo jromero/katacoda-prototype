@@ -4,49 +4,42 @@
   "difficulty": "Intermediate",
   "time": "30 minutes",
   "details": {
+    "intro": {
+      "text": "00.intro.md",
+      "courseData": "setup.sh",
+      "code": "start.sh"
+    },
     "steps": [
       {
-        "title": "Buildpack.TOML",
+        "title": "Describe your buildpack",
         "text": "01.buildpack.toml.md"
       },
       {
-        "title": "Step 2",
-        "text": "step2.md"
+        "title": "Detecting your app",
+        "text": "02.detect.md",
+        "courseData": "02.setup.sh"
       },
       {
-        "title": "Step 3",
-        "text": "step3.md"
-      },
-      {
-        "title": "Step 4",
-        "text": "step4.md"
-      },
-      {
-        "title": "Step 5",
-        "text": "step5.md"
-      },
-      {
-        "title": "Step 6",
-        "text": "step6.md"
+        "title": "Building your app",
+        "text": "03.build.md",
+        "courseData": "03.setup.sh"
       }
     ],
-    "intro": {
-      "text": "intro.md",
-      "code": "welcome.sh" 
-    },
     "finish": {
-      "text": "finish.md"
+      "text": "99.finish.md"
     },
     "assets": {
-      "client": [
-        {
-          "file": "snippets/*",
-          "target": "~/snippets/"
-        }
+      "host01": [
+        { "file": "*", "target": "/tmp/" }
       ]
     }
   },
+  "files": [
+    "ruby-buildpack/buildpack.toml"
+  ],
   "environment": {
+    "hideintro": false,
+    "hidefinish": false,
     "uilayout": "editor-terminal"
   },
   "backend": {

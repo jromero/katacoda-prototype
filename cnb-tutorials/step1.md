@@ -1,7 +1,0 @@
-Let's take a look at our environment...
-
-We have a Ruby app:
-
-```shell script{{execute}}
-cat app/app.rb
-```

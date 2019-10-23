@@ -1,3 +1,0 @@
-# Stacks that the buildpack will work with
-[[stacks]]
-id = "io.buildpacks.samples.stacks.bionic"
