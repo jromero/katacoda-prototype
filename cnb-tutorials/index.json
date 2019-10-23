@@ -6,8 +6,8 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
-        "text": "step1.md"
+        "title": "Buildpack.TOML",
+        "text": "01.buildpack.toml.md"
       },
       {
         "title": "Step 2",
@@ -31,14 +31,23 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "code": "welcome.sh" 
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "snippets/*",
+          "target": "~/snippets/"
+        }
+      ]
     }
   },
   "environment": {
-    "uilayout": "editor-terminal-split"
+    "uilayout": "editor-terminal"
   },
   "backend": {
     "imageid": "ubuntu"
